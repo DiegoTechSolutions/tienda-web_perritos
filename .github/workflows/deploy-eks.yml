@@ -108,3 +108,7 @@ jobs:
           kubectl apply -f k8s/backend-hpa.yaml -n $EKS_NAMESPACE
           kubectl apply -f k8s/frontend-hpa.yaml -n $EKS_NAMESPACE
           kubectl get hpa -n $EKS_NAMESPACE
+
+          --- name: Verificar despliegue
+          env:  
+            EKS_NAMESPACE: ${{ secrets.EKS_NAMESPACE }} 
