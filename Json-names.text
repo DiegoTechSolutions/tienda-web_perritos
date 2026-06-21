@@ -1,0 +1,58 @@
+C:\Windows\System32>aws ecr create-repository --repository-name tienda-frontend --region us-east-1
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-1:204824652959:repository/tienda-frontend",
+        "registryId": "204824652959",
+        "repositoryName": "tienda-frontend",
+        "repositoryUri": "204824652959.dkr.ecr.us-east-1.amazonaws.com/tienda-frontend",
+        "createdAt": "2026-06-21T16:04:42.682000-04:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
+
+
+C:\Windows\System32>aws ecr create-repository --repository-name tienda-backend --region us-east-1
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-1:204824652959:repository/tienda-backend",
+        "registryId": "204824652959",
+        "repositoryName": "tienda-backend",
+        "repositoryUri": "204824652959.dkr.ecr.us-east-1.amazonaws.com/tienda-backend",
+        "createdAt": "2026-06-21T16:04:54.176000-04:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
+
+
+C:\Windows\System32>aws ecr create-repository --repository-name tienda-db --region us-east-1
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-1:204824652959:repository/tienda-db",
+        "registryId": "204824652959",
+        "repositoryName": "tienda-db",
+        "repositoryUri": "204824652959.dkr.ecr.us-east-1.amazonaws.com/tienda-db",
+        "createdAt": "2026-06-21T16:05:02.358000-04:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
+
+
+C:\Windows\System32>
